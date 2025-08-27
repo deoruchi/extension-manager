@@ -29,7 +29,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Solution](https://github.com/deoruchi/extension-manager.git)
-- Live Site URL: [Live](https://your-live-site-url.com)
+- Live Site URL: [Live](https://deoruchi.github.io/extension-manager/)
 
 ## My process
 
