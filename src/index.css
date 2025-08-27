@@ -1,0 +1,44 @@
+@import "tailwindcss";
+
+@theme {
+    --color-neutral-0: hsl(200, 60%, 99%);
+    --color-neutral-100: hsl(0, 0%, 93%);
+    --color-neutral-200: hsl(217, 61%, 90%);
+    --color-neutral-300: hsl(0, 0%, 78%);
+    --color-neutral-600: hsl(226, 11%, 37%);
+    --color-neutral-700: hsl(225, 23%, 24%);
+    --color-neutral-800: hsl(226, 25%, 17%);
+    --color-neutral-900: hsl(227, 75%, 14%);
+
+    --color-red-400: hsl(3, 86%, 64%);
+    --color-red-500: hsl(3, 71%, 56%);
+    --color-red-700: hsl(3, 77%, 44%);
+
+    --color-gradient-light-t: #EBF2FC;
+    --color-gradient-light-b: #EEF8F9;
+
+}
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@font-face {
+    font-family: 'Noto Sans', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    src: url('./src/assets/fonts/NotoSans-Italic-VariableFont_wdth,wght.ttf') format('.ttf');
+    font-weight: 400 500 700;
+}
+
+.buttonStyle {
+    @apply rounded-3xl bg-white p-2 px-4 border border-neutral-200;
+    @apply cursor-pointer shadow;
+    @apply hover:border hover:border-neutral-200 hover:bg-neutral-100 hover:shadow-none hover:text-neutral-600;
+    @apply focus:bg-red-700 focus:text-white;
+    @apply focus:hover:bg-red-500
+}
+
+.buttonStyleDark {
+    @apply rounded-3xl bg-neutral-700 text-white p-2 px-4 border border-neutral-600;
+    @apply cursor-pointer;
+    @apply hover:border hover:bg-neutral-600 hover:shadow-none hover:text-neutral-100;
+    @apply focus:bg-red-400 focus:text-neutral-700;
+    @apply focus:hover:bg-red-500
+}
