@@ -70,7 +70,7 @@ Error generating stack: `+a.message+`
         min-h-screen p-3 lg:pt-8 lg:px-0 
         bg-gradient-to-b from-[#EBF2FC] to-[#EEF8F9] dark:from-[#040918] dark:to-[#091540]
          `,children:[Q.jsxs("header",{className:`
-            md:w-10/12 mx-auto p-2 rounded-xl shadow
+            md:w-10/12 mx-auto p-2.5 rounded-xl shadow mb-4
             bg-white dark:bg-neutral-800
             font-bold text-neutral-900
             flex flex-row justify-between items-center        
@@ -80,8 +80,8 @@ Error generating stack: `+a.message+`
             `,onClick:()=>K(!B),children:B?Q.jsx("img",{src:Cd,alt:"Dark"}):Q.jsx("img",{src:Gd,alt:"Light"})})]}),Q.jsx("br",{}),Q.jsxs("section",{className:`\r
         text-neutral-700 md:w-10/12 mx-auto\r
           flex flex-col md:flex-row md:justify-between gap-2 items-center\r
-        `,children:[Q.jsx("h1",{className:`${B?"text-white":"text-neutral-800"} font-bold text-2xl`,children:"Extensions List"}),Q.jsxs("div",{className:"flex flex-row gap-2 justify-between md:justify-around text-neutral-900",children:[Q.jsx("button",{className:`${B?"buttonStyleDark":"buttonStyle"} focus:outline-none focus:ring-2 focus:ring-red-400`,onClick:()=>al(),children:"All"}),Q.jsx("button",{className:`${B?"buttonStyleDark":"buttonStyle"} focus:outline-none focus:ring-2 focus:ring-red-400`,onClick:()=>El(),children:"Active"}),Q.jsx("button",{className:`${B?"buttonStyleDark":"buttonStyle"} focus:outline-none focus:ring-2 focus:ring-red-400`,onClick:()=>R(),children:"Inactive"})]})]}),Q.jsx("br",{}),Q.jsx("section",{className:`\r
+        `,children:[Q.jsx("h1",{className:`${B?"text-white":"text-neutral-800"} font-semibold text-3xl`,children:"Extensions List"}),Q.jsxs("div",{className:"flex flex-row gap-2 justify-between md:justify-around text-neutral-900",children:[Q.jsx("button",{className:` ${B?"buttonStyleDark":"buttonStyle"} focus:outline-none focus:ring-2 focus:ring-red-400`,onClick:()=>al(),children:"All"}),Q.jsx("button",{className:`${B?"buttonStyleDark":"buttonStyle"} focus:outline-none focus:ring-2 focus:ring-red-400`,onClick:()=>El(),children:"Active"}),Q.jsx("button",{className:`${B?"buttonStyleDark":"buttonStyle"} focus:outline-none focus:ring-2 focus:ring-red-400`,onClick:()=>R(),children:"Inactive"})]})]}),Q.jsx("br",{}),Q.jsx("section",{className:`\r
         mx-auto md:w-10/12\r
         grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 \r
-        gap-4\r
+        gap-2\r
         `,children:J?.map(j=>Q.jsx(Pd,{title:j.title,des:j.des,img:j.img,enabled:j.enabled,onToggle:T,onRemove:p},j.title))})]})})};function uv(){return Q.jsx(Q.Fragment,{children:Q.jsx(av,{})})}Yd.createRoot(document.getElementById("root")).render(Q.jsx(ge.StrictMode,{children:Q.jsx(uv,{})}));
