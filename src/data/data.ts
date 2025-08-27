@@ -1,3 +1,16 @@
+import devLens from "../assets/images/logo-devlens.svg";
+import styleSpy from "../assets/images/logo-style-spy.svg";
+import speedBoost from "../assets/images/logo-speed-boost.svg";
+import jsonWizard from "../assets/images/logo-json-wizard.svg";
+import tabMasterPro from "../assets/images/logo-tab-master-pro.svg";
+import viewportBuddy from "../assets/images/logo-viewport-buddy.svg";
+import markupNotes from "../assets/images/logo-markup-notes.svg";
+import gridGuides from "../assets/images/logo-grid-guides.svg";
+import palettePicker from "../assets/images/logo-palette-picker.svg";
+import linkChecker from "../assets/images/logo-link-checker.svg";
+import domSnapshot from "../assets/images/logo-dom-snapshot.svg";
+import consolePlus from "../assets/images/logo-console-plus.svg";
+
 export interface CardProps {
   title: string;
   des: string;
@@ -9,73 +22,73 @@ export const extensions: CardProps[] = [
   {
     title: "DevLens",
     des: "Quickly inspect page layouts and visualize element boundaries.",
-    img: "src/assets/images/logo-devlens.svg",
+    img: devLens,
     enabled: false,
   },
   {
     title: "StyleSpy",
     des: "Instantly analyze and copy CSS from any webpage element.",
-    img: "src/assets/images/logo-style-spy.svg",
+    img: styleSpy,
     enabled: false,
   },
   {
     title: "SpeedBoost",
     des: "Optimizes browser resource usage to accelerate page loading.",
-    img: "src/assets/images/logo-speed-boost.svg",
+    img: speedBoost,
     enabled: false,
   },
   {
     title: "JSONWizard",
     des: "Formats, validates, and prettifies JSON responses in-browser.",
-    img: "src/assets/images/logo-json-wizard.svg",
+    img: jsonWizard,
     enabled: false,
   },
   {
     title: "TabMaster Pro",
     des: "Organizes browser tabs into groups and sessions.",
-    img: "src/assets/images/logo-tab-master-pro.svg",
+    img: tabMasterPro,
     enabled: false,
   },
   {
     title: "ViewportBuddy",
     des: "Simulates various screen resolutions directly within the browser.",
-    img: "src/assets/images/logo-viewport-buddy.svg",
+    img: viewportBuddy,
     enabled: false,
   },
   {
     title: "Markup Notes",
     des: "Enables annotation and notes directly onto webpages for collaborative debugging.",
-    img: "src/assets/images/logo-markup-notes.svg",
+    img: markupNotes,
     enabled: true,
   },
   {
     title: "GridGuides",
     des: "Overlay customizable grids and alignment guides on any webpage.",
-    img: "src/assets/images/logo-grid-guides.svg",
+    img: gridGuides,
     enabled: false,
   },
   {
     title: "Palette Picker",
     des: "Instantly extracts color palettes from any webpage.",
-    img: "src/assets/images/logo-palette-picker.svg",
+    img: palettePicker,
     enabled: false,
   },
   {
     title: "LinkChecker",
     des: "Scans and highlights broken links on any page.",
-    img: "src/assets/images/logo-link-checker.svg",
+    img: linkChecker,
     enabled: false,
   },
   {
     title: "DOM Snapshot",
     des: "Capture and export DOM structures quickly.",
-    img: "src/assets/images/logo-dom-snapshot.svg",
+    img: domSnapshot,
     enabled: false,
   },
   {
     title: "ConsolePlus",
     des: "Enhanced developer console with advanced filtering and logging.",
-    img: "src/assets/images/logo-console-plus.svg",
+    img: consolePlus,
     enabled: false,
   },
 ];
