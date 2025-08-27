@@ -62,7 +62,7 @@ const removeExtension = (title : string) =>{
       >
         <header
           className={`
-            md:w-10/12 mx-auto p-2 rounded-xl shadow
+            md:w-10/12 mx-auto p-2.5 rounded-xl shadow mb-4
             bg-white dark:bg-neutral-800
             font-bold text-neutral-900
             flex flex-row justify-between items-center        
@@ -104,10 +104,10 @@ const removeExtension = (title : string) =>{
           flex flex-col md:flex-row md:justify-between gap-2 items-center
         "
         >
-          <h1 className={`${isDark?`text-white` : `text-neutral-800`} font-bold text-2xl`}>Extensions List</h1>
+          <h1 className={`${isDark?`text-white` : `text-neutral-800`} font-semibold text-3xl`}>Extensions List</h1>
           <div className="flex flex-row gap-2 justify-between md:justify-around text-neutral-900">
             <button 
-            className={`${!isDark ? `buttonStyle` : `buttonStyleDark`} focus:outline-none focus:ring-2 focus:ring-red-400`}
+            className={` ${!isDark ? `buttonStyle` : `buttonStyleDark`} focus:outline-none focus:ring-2 focus:ring-red-400`}
             onClick={()=>displayAllExtensions()}
             >All</button>
 
@@ -128,7 +128,7 @@ const removeExtension = (title : string) =>{
           className="
         mx-auto md:w-10/12
         grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 
-        gap-4
+        gap-2
         "
         >
           {extensionData?.map((datas) => {

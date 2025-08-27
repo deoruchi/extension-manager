@@ -28,7 +28,7 @@
 }
 
 .buttonStyle {
-    @apply rounded-3xl bg-white p-2 px-4 border border-neutral-200;
+    @apply rounded-3xl p-2 px-4 border border-neutral-200;
     @apply cursor-pointer shadow;
     @apply hover:border hover:border-neutral-200 hover:bg-neutral-100 hover:shadow-none hover:text-neutral-600;
     @apply focus:bg-red-700 focus:text-white;
