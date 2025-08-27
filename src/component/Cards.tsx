@@ -5,7 +5,14 @@ interface Props extends CardProps {
   onToggle: (title: string, isActive: boolean) => void;
   onRemove: (title: string) => void;
 }
-export const Cards = ({ title, des, img, enabled, onToggle, onRemove }: Props) => {
+export const Cards = ({
+  title,
+  des,
+  img,
+  enabled,
+  onToggle,
+  onRemove,
+}: Props) => {
   const [isActive, setActive] = useState(enabled);
   const switchButton = () => {
     const newValue = !isActive;
@@ -16,10 +23,9 @@ export const Cards = ({ title, des, img, enabled, onToggle, onRemove }: Props) =
 
   const removeExtension = () => {
     const res = confirm("Do you want to remove the extension");
-    if (res){
-      onRemove(title)
+    if (res) {
+      onRemove(title);
     }
-
   };
 
   return (
@@ -50,7 +56,7 @@ export const Cards = ({ title, des, img, enabled, onToggle, onRemove }: Props) =
               dark:text-white dark:border-neutral-600
               hover:dark:bg-red-500 hover:dark:border-red-500
               hover:dark:text-neutral-800
-              focus:dark:outline-red-500 focus:dark:bg-neutral-600 focus:dark:text-white
+              focus:dark:bg-neutral-600 focus:dark:text-white
               transition
               "
             onClick={removeExtension}

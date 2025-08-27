@@ -79,7 +79,8 @@ const removeExtension = (title : string) =>{
           </div>
 
           <div
-            className={`focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-red-500
+            className={`
+              
               ${
               isDark
                 ? "bg-neutral-700 p-3 rounded-md cursor-pointer hover:bg-neutral-600"
@@ -106,17 +107,17 @@ const removeExtension = (title : string) =>{
           <h1 className={`${isDark?`text-white` : `text-neutral-800`} font-bold text-2xl`}>Extensions List</h1>
           <div className="flex flex-row gap-2 justify-between md:justify-around text-neutral-900">
             <button 
-            className={!isDark ? `buttonStyle` : `buttonStyleDark`}
+            className={`${!isDark ? `buttonStyle` : `buttonStyleDark`} focus:outline-none focus:ring-2 focus:ring-red-400`}
             onClick={()=>displayAllExtensions()}
             >All</button>
 
             <button 
-            className={!isDark ? `buttonStyle` : `buttonStyleDark`}
+            className={`${!isDark ? `buttonStyle` : `buttonStyleDark`} focus:outline-none focus:ring-2 focus:ring-red-400`}
             onClick={()=>displayActiveExtensions()}
             >Active</button>
 
             <button 
-            className={!isDark ? `buttonStyle` : `buttonStyleDark`}
+            className={`${!isDark ? `buttonStyle` : `buttonStyleDark`} focus:outline-none focus:ring-2 focus:ring-red-400`}
             onClick={()=>displayInactiveExtensions()}
             >Inactive</button>
           </div>
